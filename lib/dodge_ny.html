@@ -8,14 +8,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   </head>
 
-  <body id="game-page">
-    <section class="game">
-      <canvas id="canvas" width="500" height="500">
+  <body className="group" id="game-page">
+    <div class="game">
+      <canvas id="background-canvas" width="500" height="500">
         Dodge NY Game
       </canvas>
-    </section>
+      <canvas id="foreground-canvas" width="500" height="500">
+        Dodge NY Game
+      </canvas>
+    </div>
 
-    <script type="text/javascript" src="lib/dodge_ny.js"></script>
+    <script type="text/javascript" src="bundle.js"></script>
   </body>
 
 </html>
