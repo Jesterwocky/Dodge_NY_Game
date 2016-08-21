@@ -14,7 +14,7 @@ span, article, footer, time, small {
   vertical-align: inherit;
   box-sizing: inherit;
   background: transparent;
-  font-family: sans-serif;
+  font-family: inherit;
   font-size: inherit;
 }
 
@@ -60,13 +60,28 @@ section.game {
 }
 
 #background-canvas {
-  border: 1px solid black;
+  border: 5px solid #A7B6B8;
   position: absolute;
   margin-left: 30%;
 }
 
 #foreground-canvas {
-  border: 1px solid black;
+  border: 5px solid #A7B6B8;
   position: absolute;
   margin-left: 30%;
+}
+
+h1 {
+  color: #A7B6B8;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  font-family: 'Vibur', sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  text-align: center;
+  position: relative;
 }
