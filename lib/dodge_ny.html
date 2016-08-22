@@ -9,17 +9,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   </head>
 
-  <body className="group" id="game-page">
+  <body class="group" id="game-page">
     <header>
       <h1>Dodge NY</h1>
     </header>
-    <div class="game">
-      <canvas className="game-canvas" id="background-canvas" width="500" height="500">
-        Dodge NY Game
-      </canvas>
-      <canvas className="game-canvas" tabindex="1" id="foreground-canvas" width="500" height="500">
-        Dodge NY Game
-      </canvas>
+    <div class="game group">
+      <div class="game-canvases group" id="canvases">
+        <canvas class="game-canvas" id="background-canvas" width="500" height="500">
+          Dodge NY Game
+        </canvas>
+        <canvas class="game-canvas" tabindex="1" id="foreground-canvas" width="500" height="500">
+          "Get from START to FINISH without losing your cool or getting run over."
+        </canvas>
+      </div>
+    </div>
+    <div id="game-info" class="group" width="130" height="200">
+      Politeness Points
+      <p id="score"></p>
     </div>
 
     <script type="text/javascript" src="bundle.js"></script>

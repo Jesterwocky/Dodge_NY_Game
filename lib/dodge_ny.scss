@@ -51,29 +51,65 @@ input[type="submit"] {
   clear: both;
 }
 
-section.game {
+#game-page {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  border: 1px solid black;
+}
+
+.game {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.game-canvases {
+  position: relative;
+  float: left;
+}
+
+#game-info {
+  background: #E4E2DC;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+
+  font-family: 'Vibur', sans-serif;
+  width: 120px;
+  height: 90px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-top: 15px;
+  margin-left: 20px;
+  font-size: 20px;
+  border-radius: 3px;
+}
+
+#score {
+  font-size: 50px;
 }
 
 #background-canvas {
-  border: 5px solid #A7B6B8;
+  border: 6px solid #A7B6B8;
   position: absolute;
   margin-left: 30%;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
 #foreground-canvas {
-  border: 5px solid #A7B6B8;
+  border: 6px solid #A7B6B8;
   position: absolute;
   margin-left: 30%;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
 h1 {
   color: #A7B6B8;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 700;
   text-align: center;
   font-family: 'Vibur', sans-serif;
