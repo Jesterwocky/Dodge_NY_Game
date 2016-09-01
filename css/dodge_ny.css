@@ -92,15 +92,15 @@ input[type="submit"] {
 }
 
 #background-canvas {
-  border: 6px solid #A7B6B8;
+  border: 8px solid #A7B6B8;
   position: absolute;
   margin-left: 30%;
-  border-radius: 10px;
+  border-radius: 20px;
   box-sizing: border-box;
 }
 
 #foreground-canvas {
-  border: 6px solid #A7B6B8;
+  border: 8px solid #A7B6B8;
   position: absolute;
   margin-left: 30%;
   border-radius: 10px;
@@ -137,4 +137,20 @@ p {
   content: "";
   display: block;
   clear: both;
+}
+
+.getting-impolite {
+  color: orange;
+}
+
+.most-impolite {
+  color: red;
+}
+
+.most-impolite {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0.0; }
 }
