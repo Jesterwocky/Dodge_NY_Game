@@ -52,7 +52,7 @@ input[type="submit"] {
 }
 
 #game-page {
-  width: 800px;
+  width: 900px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -83,8 +83,32 @@ input[type="submit"] {
   padding-left: 15px;
   padding-top: 15px;
   margin-left: 20px;
+  margin-right: 5%;
   font-size: 20px;
   border-radius: 3px;
+}
+
+#jkw-info {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 16px;
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 15px;
+  padding-left: 15px;
+  margin-left: 0px;
+  border-radius: 3px;
+}
+
+#jkw-info li {
+  font-size: 12px;
+  padding-top: 8px;
+  text-decoration: underline;
+}
+
+#jkw-info li:hover {
+  color: #1db31d;
 }
 
 #score {
