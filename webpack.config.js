@@ -1,8 +1,8 @@
 module.exports = {
   context: __dirname,
-  entry: "./dodge_ny.js",
+  entry: "./lib/dodge_ny.js",
   output: {
-    filename: "./bundle.js",
+    filename: "./lib/bundle.js",
   },
   devtool: 'source-map'
 };

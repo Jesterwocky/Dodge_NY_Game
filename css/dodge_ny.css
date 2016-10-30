@@ -90,7 +90,7 @@ input[type="submit"] {
 
 #jkw-info {
   font-family: 'Roboto Slab', sans-serif;
-  font-size: 18px;
+  font-size: 22px;
   width: 180px;
   margin-left: auto;
   margin-right: auto;
@@ -98,7 +98,6 @@ input[type="submit"] {
   padding-top: 15px;
   padding-left: 15px;
   margin-left: 0px;
-  border-radius: 3px;
 }
 
 #jkw-info li {
@@ -113,6 +112,21 @@ input[type="submit"] {
 
 #score {
   font-size: 50px;
+}
+
+#score.getting-impolite {
+  color: orange;
+}
+
+#score.most-impolite {
+  color: red;
+  font-size: 1em;
+  font-weight: bold;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0.0; }
 }
 
 #background-canvas {
@@ -132,7 +146,7 @@ input[type="submit"] {
 }
 
 h1 {
-  color: #A7B6B8;
+  color: #7d9092;
   font-size: 60px;
   font-weight: 700;
   text-align: center;
@@ -162,20 +176,4 @@ p {
   content: "";
   display: block;
   clear: both;
-}
-
-.getting-impolite {
-  color: orange;
-}
-
-.most-impolite {
-  color: red;
-}
-
-.most-impolite {
-  animation: blinker 1s linear infinite;
-}
-
-@keyframes blinker {
-  50% { opacity: 0.0; }
 }

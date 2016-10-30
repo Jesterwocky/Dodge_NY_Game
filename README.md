@@ -1,48 +1,16 @@
-#Dodge NY Game
+# Dodge NY Game
 
-##MVP
-This will be a dodge-the-obstacle-style game. It requires, at minimum:
-- A field of view that scrolls
-- A player character
-- Non-moving obstacle objects
-- A timer
+[Dodge NY](http://www.jessie-k-walker.com/Dodge_NY_Game/ "Dodge NY Game") is a game that simulates walking on a crowded New York City sidewalk. Surrounded by meandering strangers who jostle you and sap your patience, you must try to reach your destination before losing your cool.
 
-##Technologies
-- React for tracking field of view, obstacles, and player character as components
-- JavaScript
-- Canvas to render the field of view
-- HTML/CSS for game info and timer
+# Tech
 
-Challenge: "attaching" objects to a scrolling background.
-Solution: scrolling background = coordinate plane; objects have an attachment point in their centers corresponding to a point in the grid
+Dodge NY is written with vanilla JavaScript, using jQuery for DOM manipulation and WebPack for bundling assets.
 
-Challenge: movement of player character
-Solution: player component listens for left/right keys and allows player to change coordinates left/right; scrolling background listens for up/down keys and "scroll" forward (toward player) at a set rate
+## Collision Avoidance / Walking Algorithm
 
-Challenge: making objects appear in the field of view without blocking in the player
-Solution: game generates objects randomly but checks (potentially using a node tree) that player always has a path to the upper bound of the field of view (i.e., forward)
-
-Challenge: object collisions
-Solution: player component checks its calculated boundaries for overlap with other objects' calculated boundaries
-
-Challenge: movement of other objects (if there's time to add this)
-Solution: collection of allowed movement vectors for each component (object type)
-
-##Implementation Timeline
-
-###Phase 1: Board, Timer, and Objects
-- Board component
-- Timer component
-- Get board to scroll in canvas
-- Create various components/object types
-- Get objects to appear on canvas and scroll with board
-
-###Phase 2: Player character
-- Player component
-- Get player component to move left/right in the canvas
-- Get player component to appear on the grid in the canvas, with board scrolling beneath
-
-###Phase 3: Collisions and Gameplay
-- Make canvas stop scrolling when character collides with object
-- End game if character collides with certain object types
-- End game if character reaches destination (specific "latitude" of board)
+The game contains logic to ensure that person obstacles:
+* Walk primarily north/south, with potential east/west drift.
+* Stay within the left/right bounds.
+* Wrap around when walking off the top or bottom bound.
+* Avoid static obstacles on the sidewalk.
+* Stay off the road unless avoiding a sidewalk obstacle or if specifically designated as a road-walking person.
